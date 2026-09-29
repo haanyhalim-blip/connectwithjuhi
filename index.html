@@ -120,6 +120,21 @@ footer{text-align:center;font-size:.8rem;font-weight:600;color:var(--muted)}
   .choose h2{font-size:1.5rem;margin:14px 110px 12px 0}
   .line{font-size:1.85rem;max-width:300px;margin-left:24px}
 }
+
+/* Computers: everything on one screen, no scrolling until a heading is opened */
+@media (min-width:900px){
+  .wrap{min-height:100vh;min-height:100svh;padding-top:18px;padding-bottom:14px;grid-template-rows:none;align-content:center}
+  .bottom{display:contents}
+  .figure{grid-row:1/span 5;padding-top:26px}
+  .figure img{max-height:calc(100vh - 250px);max-height:calc(100svh - 250px);object-fit:cover;object-position:center 20%}
+  .corner.l{grid-column:1;grid-row:6/span 3;align-self:start;margin:14px 0 0 6px;font-size:1.4rem}
+  .line{margin-top:44px}
+  .corner.r{grid-column:2;grid-row:5/span 4;align-self:start;justify-self:end;margin:26px 10px 0 0;font-size:1.4rem}
+  .choose h2{margin-top:18px}
+  .trust{margin:12px 0 8px}
+  .ig{margin:10px 0 4px}
+  .strip{grid-row:10;margin-top:12px}
+}
 </style>
 </head>
 <body>
